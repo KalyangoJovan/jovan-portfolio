@@ -10,6 +10,8 @@ export const site = {
   linkedin: "https://linkedin.com/in/jovan-kalyango",
   // TODO: set your real GitHub handle
   github: "https://github.com/KalyangoJovan",
+    calendly: "https://calendly.com/kalyangojovan/30min",
+  whatsapp: "https://wa.me/393494333088",
   location: "Bologna, Italy - remote worldwide",
   resumeFile: "/Jovan_Kalyango_Resume.pdf",
 };

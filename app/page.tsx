@@ -202,10 +202,9 @@ export default function Home() {
                 Let&apos;s talk
               </h2>
               <p className="max-w-[48ch] text-[var(--text-mute)]">
-                I&apos;m available now and can start immediately. If you need
-                someone who&apos;s equally comfortable in a data warehouse and a
-                trade blotter, I&apos;d like to hear about what you&apos;re
-                building.
+                I&apos;m available now and can start immediately. If you need someone
+                who&apos;s equally comfortable in a data warehouse and a trade blotter,
+                book a call directly or reach me on WhatsApp or email.
               </p>
             </div>
             <div className="rounded border border-[var(--line)] bg-[var(--bg-raised)] p-6">
@@ -248,11 +247,27 @@ export default function Home() {
                 </dt>
                 <dd className="mt-0.5">{site.location}</dd>
               </dl>
-              <div className="mt-5">
+              <div className="mt-5 flex flex-wrap gap-2.5">
+                <a
+                  href={site.calendly}
+                  target="_blank"
+                  rel="noopener"
+                  className="inline-block rounded-sm bg-[var(--text)] px-4 py-2 text-[15px] font-medium text-[var(--bg)] transition-opacity hover:opacity-85"
+                >
+                  Book a call
+                </a>
+                <a
+                  href={site.whatsapp}
+                  target="_blank"
+                  rel="noopener"
+                  className="inline-block rounded-sm border border-[var(--line)] px-4 py-2 text-[15px] font-medium transition-colors hover:border-[var(--text-mute)]"
+                >
+                  WhatsApp
+                </a>
                 <a
                   href={site.resumeFile}
                   download
-                  className="inline-block rounded-sm bg-[var(--text)] px-4 py-2 text-[15px] font-medium text-[var(--bg)] transition-opacity hover:opacity-85"
+                  className="inline-block rounded-sm border border-[var(--line)] px-4 py-2 text-[15px] font-medium transition-colors hover:border-[var(--text-mute)]"
                 >
                   Download résumé
                 </a>
