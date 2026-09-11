@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: var(--font-newsreader), Georgia, serif;
+  --font-sans: var(--font-plex), Arial, sans-serif;
+  --font-mono: var(--font-plex-mono), monospace;
+
+  --color-signal: #b8862f;
+  --color-signal-bright: #d9a548;
+  --color-live: #2e7d4f;
+  --color-live-bright: #4caf7d;
+}
+
+/* Light theme (default) */
+:root {
+  --bg: #eef0ef;
+  --bg-raised: #ffffff;
+  --ink-band: #10151f;
+  --line: #d8dad3;
+  --text: #181c22;
+  --text-mute: #565c66;
+}
+
+/* Dark theme */
+.dark {
+  --bg: #0e1117;
+  --bg-raised: #171b23;
+  --ink-band: #070a10;
+  --line: #262b35;
+  --text: #e8eaed;
+  --text-mute: #9aa1ad;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-signal);
+  outline-offset: 3px;
+}
