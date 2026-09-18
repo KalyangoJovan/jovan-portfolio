@@ -99,7 +99,7 @@ export const projects: Project[] = [
       "The first framework module is being packaged as a public, reproducible repository - see the pipeline below.",
     ],
     tags: ["Quantitative research", "Python", "Systems design"],
-    links: [{ label: "Public backtester repo - in the pipeline" }],
+    links: [{ label: "Public backtester repo", href: "https://github.com/KalyangoJovan/driips-backtester" }],
   },
 ];
 
@@ -111,11 +111,12 @@ export const pipeline: {
   href?: string;
 }[] = [
   {
-    name: "DRIIPS backtester module",
-    status: "research",
-    statusLabel: "In progress",
+    name: "driips-backtester",
+    status: "live",
+    statusLabel: "Shipped",
     blurb:
-      "One complete trading framework from ICT-OS as a documented Python backtester - spec, engine, equity curve, and honest limitations, reproducible end to end.",
+      "Systematic intraday futures strategy — written spec, Python backtesting engine, out-of-sample validation on a held-out year (231 trades, +277R net), costs and limitations stated. Reproducible via synthetic mode.",
+    href: "https://github.com/KalyangoJovan/driips-backtester",
   },
   {
     name: "Statistical case study",
