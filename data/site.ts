@@ -57,6 +57,24 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Automating Email Classification for INFN CNAF User Support",
+    role: "MSc thesis · 8-month internship trainee, INFN CNAF, Bologna · 2024",
+    status: "live",
+    statusLabel: "Completed",
+    summary:
+      "End-to-end multilingual text pipeline over 28,000+ real support emails (2.7 GB, Italian/English): ingestion, cleaning and language-aware stemming, thread detection, TF-IDF + LDA topic modelling, chi-squared feature selection, class-imbalance handling, and an eight-classifier benchmark with full error analysis. Supervised by Prof. Stefano Lodi and Prof. Elisabetta Ronchieri, University of Bologna.",
+    highlights: [
+      "28,562 raw .eml messages (2.7 GB, 2017–2024) from a live user-support desk, mixed Italian/English, five service categories",
+      "Pipeline: recursive ingest → cleaning → per-message language detection → Snowball stemming (IT/EN) → thread detection → TF-IDF and Count vectorisation → LDA topic modelling",
+      "Chi-squared feature selection, Truncated SVD, and class-imbalance handling (over/under-sampling, class weights)",
+      "Eight classifiers benchmarked on precision, recall, F1 and AUC with confusion matrices and a written error analysis",
+    ],
+    tags: ["Python", "pandas", "scikit-learn", "NLTK", "NLP", "Text Classification"],
+    links: [
+      { label: "Read the thesis (PDF)", href: "/Kalyango_Jovan_MSc_Thesis.pdf" },
+    ],
+  },
+  {
     name: "Driips Capital",
     role: "Founder - 2025-present",
     status: "live",
@@ -100,19 +118,6 @@ export const projects: Project[] = [
     ],
     tags: ["Quantitative research", "Python", "Systems design"],
     links: [{ label: "Public backtester repo", href: "https://github.com/KalyangoJovan/driips-backtester" }],
-  },
-  {
-    name: "Automating Email Classification for INFN CNAF User Support",
-    role: "MSc thesis · 8-month internship trainee, INFN CNAF, Bologna · 2024",
-    status: "live",
-    statusLabel: "Completed",
-    summary:
-      "End-to-end multilingual text pipeline over 28,000+ real support emails (2.7 GB, Italian/English): ingestion, cleaning and language-aware stemming, thread detection, TF-IDF + LDA topic modelling, chi-squared feature selection, class-imbalance handling, and an eight-classifier benchmark with full error analysis. Supervised by Prof. Stefano Lodi and Prof. Elisabetta Ronchieri, University of Bologna.",
-    highlights: [],
-    tags: ["Python", "pandas", "scikit-learn", "NLTK", "NLP", "Text Classification"],
-    links: [
-      { label: "Read the thesis (PDF)", href: "/Kalyango_Jovan_MSc_Thesis.pdf" },
-    ],
   },
 ];
 
